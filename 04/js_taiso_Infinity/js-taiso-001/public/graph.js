@@ -35,8 +35,8 @@ canvas {
   box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
 }
 `;
-document.head.appendChild(sty);
-document.body.appendChild(cvs);
+document.head.append(sty);
+document.body.append(cvs);
 
 const promises = [];
 
