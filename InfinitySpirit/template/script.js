@@ -93,7 +93,7 @@ try {
   console.log("not found date object");
 }
 if (document.querySelector(".article-title").innerHTML == "") {
-  document.querySelector("InfinitySpiritArticleTitle").innerHTML =
+  document.querySelector("InfinitySpiritTitle").innerHTML =
     document.querySelector("InfinitySpiritContent h1").innerHTML;
 }
 const renew_Infinity_clock = () => {
@@ -192,4 +192,19 @@ const copyURL = () => {
     );
   };
   copyToClipBoard(window.location.href);
+};
+const shareX = () => {
+  const target_url = window.location.href;
+  const target_text =
+    document.querySelector("InfinitySpiritTitle").innerHTML +
+    " - The Infinity's";
+  const target_hashtags = "TheInfinitys";
+  const X_url =
+    "https://x.com/intent/post?url=" +
+    encodeURI(target_url) +
+    "&text=" +
+    encodeURI(target_text) +
+    "&hashtags=" +
+    encodeURI(target_hashtags);
+  window.open((url = X_url), (target = "_blank"));
 };
