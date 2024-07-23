@@ -196,7 +196,7 @@ const copyURL = () => {
 const shareX = () => {
   const target_url = window.location.href;
   const target_text =
-    document.querySelector("InfinitySpiritTitle").innerHTML +
+    document.title +
     " - The Infinity's";
   const target_hashtags = "TheInfinitys";
   const X_url =
