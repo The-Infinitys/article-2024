@@ -4,18 +4,18 @@
 }
 
 body {
-  background-color: var(--infinityspirit-back);
+  background-color: var(--background);
 }
 
 :root {
-  --infinityspirit-back: white;
-  --infinityspirit-text: black;
+  --background: white;
+  --text: black;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --infinityspirit-back: black;
-    --infinityspirit-text: white;
+    --background: black;
+    --text: white;
   }
 
   a {
@@ -26,7 +26,7 @@ body {
 .article-body {
   width: 100%;
   padding-top: 5vh;
-  color: var(--infinityspirit-text);
+  color: var(--text);
 }
 
 #go-top {
@@ -50,10 +50,10 @@ body {
   background:
     color-mix(in srgb,
       color-mix(in srgb,
-        var(--infinityspirit-back),
+        var(--background),
         #888 10%),
       transparent 10%);
-  color: var(--infinityspirit-text);
+  color: var(--text);
 }
 
 .article-content h1,
@@ -95,13 +95,13 @@ body {
 
 .article-content table {
   border-collapse: collapse;
-  border: solid 2px var(--infinityspirit-text);
+  border: solid 2px var(--text);
   max-width: 100%;
 }
 
 .article-content th,
 .article-content td {
-  border: solid 2px var(--infinityspirit-text);
+  border: solid 2px var(--text);
 }
 
 .article-title {
@@ -123,9 +123,9 @@ body {
   margin-top: 5vh;
   margin-bottom: 5vh;
   font-size: 5vh;
-  background: var(--infinityspirit-back);
+  background: var(--background);
   padding: 10px;
-  border: 2px solid var(--infinityspirit-text);
+  border: 2px solid var(--text);
   border-radius: 5vh;
 }
 
@@ -140,7 +140,7 @@ body {
 InfinitySpiritDate {
   font-size: 30px;
   font-weight: 400;
-  color: color-mix(in srgb, var(--infinityspirit-text), transparent 20%);
+  color: color-mix(in srgb, var(--text), transparent 20%);
 }
 
 .article-index {
@@ -195,7 +195,7 @@ InfinitySpiritDate {
   height: 80vh;
   overflow-x: hidden;
   overflow-y: scroll;
-  color: var(--infinityspirit-text);
+  color: var(--text);
   background-color: #8883;
 }
 
@@ -209,7 +209,7 @@ InfinitySpiritDate {
   width: calc(var(--this-width) - 2 * var(--this-margin));
   margin: var(--this-margin);
   aspect-ratio: 4/3;
-  background-color: var(--infinityspirit-back);
+  background-color: var(--background);
 }
 
 .articles-recommended>button>img {
@@ -229,7 +229,7 @@ InfinitySpiritDate {
   height: 20%;
   top: 80%;
   left: 0;
-  color: var(--infinityspirit-text);
+  color: var(--text);
 }
 
 .articles-recommended>button>div h1 {
