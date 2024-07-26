@@ -3,15 +3,13 @@
   --infinityspirit-text: black;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --infinityspirit-back: black;
-    --infinityspirit-text: white;
-  }
+:root[theme="dark"] {
+  --infinityspirit-back: black;
+  --infinityspirit-text: white;
+}
 
-  a {
-    color: aqua;
-  }
+a[theme="dark"] {
+  color: aqua;
 }
 
 .search-query {
