@@ -12,15 +12,13 @@ body {
   --text: black;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: black;
-    --text: white;
-  }
+:root[theme="dark"] {
+  --background: black;
+  --text: white;
+}
 
-  a {
-    color: aqua;
-  }
+a[theme="dark"] {
+  color: aqua;
 }
 
 .article-body {
