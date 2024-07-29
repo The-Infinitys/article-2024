@@ -198,7 +198,7 @@ const shareX = () => {
   const target_text =
     document.title +
     " - The Infinity's";
-  const target_hashtags = "TheInfinitys";
+  const target_hashtags = "BelieveTheInfinityPossibility";
   const X_url =
     "https://x.com/intent/post?url=" +
     encodeURI(target_url) +
