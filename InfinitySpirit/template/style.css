@@ -17,10 +17,6 @@ body {
   --text: white;
 }
 
-a[theme="dark"] {
-  color: aqua;
-}
-
 .article-body {
   width: 100%;
   padding-top: 5vh;
@@ -115,12 +111,12 @@ a[theme="dark"] {
 }
 
 .article-share {
-  width: 50vh;
+  width: min(100vw,50vh);
   height: 5vh;
   margin-left: 5vw;
   margin-top: 5vh;
   margin-bottom: 5vh;
-  font-size: 5vh;
+  font-size: min(10vw,5vh);
   background: var(--background);
   padding: 10px;
   border: 2px solid var(--text);
