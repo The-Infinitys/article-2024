@@ -29,7 +29,17 @@ const parseHTML = (html) => {
   }
 
   formatNode(doc.body);
-  return formattedHTML;
+  formattedHTML = formattedHTML.substring(
+    "<body>".length,
+    formattedHTML.length - "</body>".length
+  );
+  const formattedLines = formattedHTML.split("\n");
+  result = "";
+  for (let i = 0; i < formattedLines.length; i++) {
+    result +=
+      formattedLines[i].substring("2", formattedLines[i].length-1) + "\n";
+  }
+  return result;
 };
 function compressHTML(html) {
   const parser = new DOMParser();
@@ -71,11 +81,13 @@ const x_editor = {
     const content = document.querySelector(
       '#x-editor>textarea[data-type="content"]'
     );
-    content.value = document.querySelector(
-      "#react-root > div > div > div.css-175oi2r.r-1f2l425.r-13qz1uu.r-417010.r-18u37iz > main > div > div > div > div.css-175oi2r.r-kemksi.r-1kqtdi0.r-1ua6aaf.r-th6na.r-1phboty.r-16y2uox.r-184en5c.r-1c4cdxw.r-1t251xo.r-f8sm7e.r-13qz1uu.r-1ye8kvj > div > div:nth-child(3) > div > div > section > div > div > div:nth-child(" +
-        index +
-        ") > div > div > article > div > div > div.css-175oi2r.r-18u37iz > div.css-175oi2r.r-1iusvr4.r-16y2uox.r-1777fci.r-kzbkwu"
-    ).innerHTML;
+    content.value = parseHTML(
+      document.querySelector(
+        "#react-root > div > div > div.css-175oi2r.r-1f2l425.r-13qz1uu.r-417010.r-18u37iz > main > div > div > div > div.css-175oi2r.r-kemksi.r-1kqtdi0.r-1ua6aaf.r-th6na.r-1phboty.r-16y2uox.r-184en5c.r-1c4cdxw.r-1t251xo.r-f8sm7e.r-13qz1uu.r-1ye8kvj > div > div:nth-child(3) > div > div > section > div > div > div:nth-child(" +
+          index +
+          ") > div > div > article > div > div > div.css-175oi2r.r-18u37iz > div.css-175oi2r.r-1iusvr4.r-16y2uox.r-1777fci.r-kzbkwu"
+      ).innerHTML
+    );
   },
   edit_post_content: () => {
     const index = document.querySelector(
@@ -88,10 +100,12 @@ const x_editor = {
       "#react-root > div > div > div.css-175oi2r.r-1f2l425.r-13qz1uu.r-417010.r-18u37iz > main > div > div > div > div.css-175oi2r.r-kemksi.r-1kqtdi0.r-1ua6aaf.r-th6na.r-1phboty.r-16y2uox.r-184en5c.r-1c4cdxw.r-1t251xo.r-f8sm7e.r-13qz1uu.r-1ye8kvj > div > div:nth-child(3) > div > div > section > div > div > div:nth-child(" +
         index +
         ") > div > div > article > div > div > div.css-175oi2r.r-18u37iz > div.css-175oi2r.r-1iusvr4.r-16y2uox.r-1777fci.r-kzbkwu"
-    ).innerHTML = content.value
-      .replace("&amp;", "&")
-      .replace("&lt;", "<")
-      .replace("&gt;", ">");
+    ).innerHTML = compressHTML(
+      content.value
+        .replace("&amp;", "&")
+        .replace("&lt;", "<")
+        .replace("&gt;", ">")
+    );
   },
 };
 const x_editor_source = {
