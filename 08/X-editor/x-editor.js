@@ -64,6 +64,24 @@ function compressHTML(html) {
 const timeline_div_selector =
   "#react-root > div > div > div.css-175oi2r.r-1f2l425.r-13qz1uu.r-417010.r-18u37iz > main > div > div > div > div.css-175oi2r.r-kemksi.r-1kqtdi0.r-1ua6aaf.r-th6na.r-1phboty.r-16y2uox.r-184en5c.r-1c4cdxw.r-1t251xo.r-f8sm7e.r-13qz1uu.r-1ye8kvj > div > div:nth-child(3) > div > div > section > div > div";
 const x_editor = {
+  copy_post_content: () => {
+    const index = document.querySelector(
+      '#x-editor>input[data-type="target_position"]'
+    ).value;
+    document
+      .querySelector(timeline_div_selector)
+      .prepend(
+        document.querySelector(timeline_div_selector).children[parseInt(index)]
+      );
+  },
+  remove_post_content: () => {
+    const index = document.querySelector(
+      '#x-editor>input[data-type="target_position"]'
+    ).value;
+    document
+      .querySelector(timeline_div_selector)
+      .children[parseInt(index)].remove();
+  },
   get_post_content: () => {
     const index = document.querySelector(
       '#x-editor>input[data-type="target_position"]'
@@ -101,8 +119,10 @@ const x_editor_source = {
   <input data-type="target_position" type="text" />
   <button data-type="target_position">get content</button>
   <p>content</p>
-  <textarea data-type="content"></textarea>
-  <button data-type="content">edit</button>
+  <textarea data-type="content"></textarea><br />
+  <button data-type="edit">edit</button><br />
+  <button data-type="remove">remove</button><br />
+  <button data-type="copy">copy</button>
   `,
   css: `
   #x-editor{
@@ -146,7 +166,13 @@ const init = () => {
     .querySelector('#x-editor>button[data-type="target_position"]')
     .addEventListener("click", x_editor.get_post_content);
   document
-    .querySelector('#x-editor>button[data-type="content"]')
+    .querySelector('#x-editor>button[data-type="edit"]')
     .addEventListener("click", x_editor.edit_post_content);
+  document
+    .querySelector('#x-editor>button[data-type="remove"]')
+    .addEventListener("click", x_editor.remove_post_content);
+  document
+    .querySelector('#x-editor>button[data-type="copy"]')
+    .addEventListener("click", x_editor.copy_post_content);
 };
 init();
