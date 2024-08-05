@@ -61,52 +61,62 @@ function compressHTML(html) {
   return compressedHTML.trim();
 }
 
-const timeline_div_selector =
-  "#react-root > div > div > div.css-175oi2r.r-1f2l425.r-13qz1uu.r-417010.r-18u37iz > main > div > div > div > div.css-175oi2r.r-kemksi.r-1kqtdi0.r-1ua6aaf.r-th6na.r-1phboty.r-16y2uox.r-184en5c.r-1c4cdxw.r-1t251xo.r-f8sm7e.r-13qz1uu.r-1ye8kvj > div > div:nth-child(3) > div > div > section > div > div";
+const timeline_div = document.querySelector(
+  "#react-root > div > div > div.css-175oi2r.r-1f2l425.r-13qz1uu.r-417010.r-18u37iz > main > div > div > div > div.css-175oi2r.r-kemksi.r-1kqtdi0.r-1ua6aaf.r-th6na.r-1phboty.r-16y2uox.r-184en5c.r-1c4cdxw.r-1t251xo.r-f8sm7e.r-13qz1uu.r-1ye8kvj > div > div:nth-child(3) > div > div > section > div > div"
+);
 const x_editor = {
+  max: () => {
+    const editor = document.querySelector("#x-editor");
+    if (editor.style.width == "98%") {
+      editor.style.width = "auto";
+    } else {
+      editor.style.width = "98%";
+    }
+  },
+  hide: () => {
+    const hide_button = document.querySelector("#x-editor-hide");
+    const editor = document.querySelector("#x-editor");
+    if (editor.style.display == "none") {
+      editor.style.display = "";
+      hide_button.style.opacity = "1";
+    } else {
+      editor.style.display = "none";
+      hide_button.style.opacity = "0";
+    }
+  },
   copy_post_content: () => {
-    const index = document.querySelector(
-      '#x-editor>input[data-type="target_position"]'
-    ).value;
-    document
-      .querySelector(timeline_div_selector)
-      .prepend(
-        document.querySelector(timeline_div_selector).children[parseInt(index)]
-      );
+    const index = parseInt(
+      document.querySelector('#x-editor>input[data-type="target_position"]')
+        .value
+    );
+    timeline_div.prepend(timeline_div.children[index].importNode());
   },
   remove_post_content: () => {
-    const index = document.querySelector(
-      '#x-editor>input[data-type="target_position"]'
-    ).value;
-    document
-      .querySelector(timeline_div_selector)
-      .children[parseInt(index)].remove();
+    const index = parseInt(
+      document.querySelector('#x-editor>input[data-type="target_position"]')
+        .value
+    );
+    timeline_div.children[index].remove();
   },
   get_post_content: () => {
-    const index = document.querySelector(
-      '#x-editor>input[data-type="target_position"]'
-    ).value;
+    const index = parseInt(
+      document.querySelector('#x-editor>input[data-type="target_position"]')
+        .value
+    );
     const content = document.querySelector(
       '#x-editor>textarea[data-type="content"]'
     );
-    content.value = document.querySelector(
-      "#react-root > div > div > div.css-175oi2r.r-1f2l425.r-13qz1uu.r-417010.r-18u37iz > main > div > div > div > div.css-175oi2r.r-kemksi.r-1kqtdi0.r-1ua6aaf.r-th6na.r-1phboty.r-16y2uox.r-184en5c.r-1c4cdxw.r-1t251xo.r-f8sm7e.r-13qz1uu.r-1ye8kvj > div > div:nth-child(3) > div > div > section > div > div > div:nth-child(" +
-        index +
-        ") > div > div > article > div > div > div.css-175oi2r.r-18u37iz > div.css-175oi2r.r-1iusvr4.r-16y2uox.r-1777fci.r-kzbkwu"
-    ).innerHTML;
+    content.value = timeline_div.children[index].innerHTML;
   },
   edit_post_content: () => {
-    const index = document.querySelector(
-      '#x-editor>input[data-type="target_position"]'
-    ).value;
+    const index = parseInt(
+      document.querySelector('#x-editor>input[data-type="target_position"]')
+        .value
+    );
     const content = document.querySelector(
       '#x-editor>textarea[data-type="content"]'
     );
-    document.querySelector(
-      "#react-root > div > div > div.css-175oi2r.r-1f2l425.r-13qz1uu.r-417010.r-18u37iz > main > div > div > div > div.css-175oi2r.r-kemksi.r-1kqtdi0.r-1ua6aaf.r-th6na.r-1phboty.r-16y2uox.r-184en5c.r-1c4cdxw.r-1t251xo.r-f8sm7e.r-13qz1uu.r-1ye8kvj > div > div:nth-child(3) > div > div > section > div > div > div:nth-child(" +
-        index +
-        ") > div > div > article > div > div > div.css-175oi2r.r-18u37iz > div.css-175oi2r.r-1iusvr4.r-16y2uox.r-1777fci.r-kzbkwu"
-    ).innerHTML = content.value
+    timeline_div.children[index].innerHTML = content.value
       .replace("&amp;", "&")
       .replace("&lt;", "<")
       .replace("&gt;", ">");
@@ -114,6 +124,7 @@ const x_editor = {
 };
 const x_editor_source = {
   html: `
+  <button id="x-editor-max">□</button>
   <h1>X Post Editor</h1>
   <p>target position</p>
   <input data-type="target_position" type="text" />
@@ -137,6 +148,34 @@ const x_editor_source = {
     color:white;
     border:2px solid aqua;
     border-radius:10px 0 0 10px;
+  }
+  #x-editor-hide{
+    text-align:center;
+    padding:0;
+    position:fixed;
+    z-index:10000000;
+    width:40px;
+    height:24px;
+    top:0;
+    right:0;
+    background-color:black;
+    color:white;
+    border:2px solid aqua;
+  }
+  #x-editor-max{
+    text-align:center;
+    font-weight:600;
+    padding:0;
+    position:fixed;
+    z-index:10000000;
+    width:40px;
+    height:24px;
+    top:0;
+    right:40px;
+    background-color:black;
+    color:white;
+    border:2px solid aqua;
+    border-radius:0 0 0 10px;
   }
   #x-editor>input,
   #x-editor>button{
@@ -174,5 +213,13 @@ const init = () => {
   document
     .querySelector('#x-editor>button[data-type="copy"]')
     .addEventListener("click", x_editor.copy_post_content);
+  const hide_button = document.createElement("button");
+  hide_button.innerHTML = "x";
+  hide_button.id = "x-editor-hide";
+  hide_button.addEventListener("click", x_editor.hide);
+  document
+    .querySelector("#x-editor-max")
+    .addEventListener("click", x_editor.max);
+  document.body.append(hide_button);
 };
 init();
