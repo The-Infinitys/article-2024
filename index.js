@@ -16,12 +16,12 @@ const recommendArticles = async () => {
     const thumbnail = new Image();
     thumbnail.alt = article_info.id;
     if (article_info.thumbnail == "") {
-      thumbnail.src = "../image/loading-infinity.svg";
+      thumbnail.src = "../image/loading-yarimasune.svg";
     } else {
       thumbnail.src = article_root_path + article_info.thumbnail;
     }
     const loading = new Image();
-    loading.src = "../image/loading-infinity.svg";
+    loading.src = "../image/loading-yarimasune.svg";
     loading.alt = "";
     const title = document.createElement("div");
     title.innerHTML =
