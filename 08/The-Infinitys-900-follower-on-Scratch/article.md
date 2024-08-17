@@ -4,3 +4,5 @@
 サンキューです！次は999人を目指しましょう！
 
 <img style="width:100%;" src="./thumbnail.jpeg" />
+
+# date: 2024/08/17
