@@ -1,6 +1,12 @@
 {
   "articles": [
     {
+      "id": "The-Infinitys-900-follower-on-Scratch",
+      "title": "\u30d5\u30a9\u30ed\u30ef\u30fc900\u4eba\u7a81\u7834\uff01",
+      "date": "2024/08/17",
+      "thumbnail": "thumbnail.jpeg"
+    },
+    {
       "id": "The-Infinitys-888-followers-on-Scratch",
       "title": "Scratch\u3067\u30d5\u30a9\u30ed\u30ef\u30fc888\u4eba\u7a81\u7834\u3057\u307e\u3057\u305f\uff01",
       "date": "2024/08/13",
@@ -11,12 +17,6 @@
       "title": "X Editor!",
       "date": "2024/08/05",
       "thumbnail": "thumbnail.svg"
-    },
-    {
-      "id": "The-Infinitys-900-follower-on-Scratch",
-      "title": "\u30d5\u30a9\u30ed\u30ef\u30fc900\u4eba\u7a81\u7834\uff01",
-      "date": "",
-      "thumbnail": "thumbnail.jpeg"
     }
   ]
 }
