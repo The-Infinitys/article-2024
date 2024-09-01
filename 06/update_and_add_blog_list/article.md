@@ -118,12 +118,12 @@ const main = () => {//add article
   };
   get_all_article_info();
   //add style
-  fetch("https://" + new URL(window.location.href).hostname + "/The-Infinitys-Infinity/style.css").then(res => res.text()).then(style => {
+  fetch("https://" + new URL(window.location.href).hostname + "/template/style.css").then(res => res.text()).then(style => {
     const The_Infinitys_css = document.createElement("style");
     The_Infinitys_css.innerHTML = style;
     document.body.append(The_Infinitys_css);
   }).catch(err => alert(err));
-  fetch("https://" + new URL(window.location.href).hostname + "/The-Infinitys-Infinity/script.js").then(res => res.text()).then(style => {
+  fetch("https://" + new URL(window.location.href).hostname + "/template/script.js").then(res => res.text()).then(style => {
     const The_Infinitys_js = document.createElement("script");
     The_Infinitys_js.innerHTML = style;
     document.body.append(The_Infinitys_js);
