@@ -127,7 +127,7 @@ background-color: #0056b3;
         })
         .catch((err) => alert("error: " + err));
       comment_box.id = "comments-"+comment_id;
-      comment_box.setAttribute("data-comment-id",comment_id)
+      comment_box.setAttribute("data-comment-id",comment_id);
       comment_image.width = 45;
       comment_image.height = 45;
       comment_user_a.append(comment_image);
