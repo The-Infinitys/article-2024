@@ -153,7 +153,7 @@ background-color: #0056b3;
         `</span>
       <a
         class="reply"
-        style="display: inline;"
+        style="display: none;"
         data-comment-id="${comment_id}"
         data-parent-thread="${comment_id}"
         data-commentee-id="${commentee_id}"
