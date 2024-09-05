@@ -110,19 +110,21 @@ background-color: #0056b3;
       var actions_warp = document.createElement("div");
       actions_warp.className = "actions-wrap";
       actions_warp.innerHTML =
-        '<span data-control="delete" class="actions report">Delete</span>\n<span data-control="report" class="actions report"> 報告 </span>';
+        '<span data-control="report" class="actions report"> 報告 </span>';
       comment_box.append(actions_warp);
       const comment_user_a = document.createElement("a");
       const comment_username = username;
       const comment_id = document.querySelector("#sce-reply-id").value;
       comment_user_a.href = "/users/" + comment_username;
       const comment_image = document.createElement("img");
+      let commentee_id = "";
       comment_image.className = "avatar";
       fetch("https://api.scratch.mit.edu/users/" + comment_username)
         .then((res) => res.json())
         .then((data) => {
           comment_image.src = data.profile.images["60x60"];
           comment_image.alt = comment_username;
+          commentee_id = data.id.toString();
         })
         .catch((err) => alert("error: " + err));
       comment_image.width = 45;
@@ -153,7 +155,7 @@ background-color: #0056b3;
         style="display: inline;"
         data-comment-id="${comment_id}"
         data-parent-thread="${comment_id}"
-        data-commentee-id="116605060"
+        data-commentee-id="${commentee_id}"
         data-control="reply-to">
         <span>Reply</span>
       </a>
