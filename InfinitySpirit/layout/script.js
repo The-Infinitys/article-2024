@@ -148,12 +148,12 @@ const recommendArticles = async () => {
     };
     const thumbnail = new Image();
     if (article_info.thumbnail == "") {
-      thumbnail.src = "../../InfinitySpirit/template/image/loading.svg";
+      thumbnail.src = "../../InfinitySpirit/layout/image/loading.svg";
     } else {
       thumbnail.src = article_root_path + article_info.thumbnail;
     }
     const loading = new Image();
-    loading.src = "../../InfinitySpirit/template/image/loading.svg";
+    loading.src = "../../InfinitySpirit/layout/image/loading.svg";
     const title = document.createElement("div");
     title.innerHTML =
       "<h1>" + article_info.title + "</h1><p>date: " + article_info.date;

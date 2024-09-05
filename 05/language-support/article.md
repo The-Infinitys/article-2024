@@ -41,7 +41,7 @@ alt="language-support.js"
 style="width: 100%" />
 <a
 target="_parent"
-href="https://github.com/The-Infinitys/the-infinitys.github.io/blob/main/template/language-support.js"
+href="https://github.com/The-Infinitys/the-infinitys.github.io/blob/main/layout/language-support.js"
 >view language-support.js</a
 >
 <p>まずはプログラム、language-support.jsです。</p>

@@ -7,10 +7,10 @@
   <title>
     ブログをさらに進化させる The Infinity's Article
   </title>
-  <link rel="stylesheet" href="../../InfinitySpirit/template/style.css" />
-  <script defer src="../../InfinitySpirit/template/script.js"></script>
-  <link rel="stylesheet" href="/template/style.css" />
-  <script defer src="/template/script.js"></script>
+  <link rel="stylesheet" href="../../InfinitySpirit/layout/style.css" />
+  <script defer src="../../InfinitySpirit/layout/script.js"></script>
+  <link rel="stylesheet" href="/layout/style.css" />
+  <script defer src="/layout/script.js"></script>
   <meta name="description" content="The Infinity's articles " />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="ブログをさらに進化させる" />
@@ -176,12 +176,12 @@
   <span style="color: #f8f8f2">};</span>
   <span style="color: #a6e22e">get_all_article_info</span><span style="color: #f8f8f2">();</span>
   <span style="color: #75715e">//add style</span>
-  <span style="color: #a6e22e">fetch</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;https://&quot;</span> <span style="color: #f92672">+</span> <span style="color: #f92672">new</span> <span style="color: #a6e22e">URL</span><span style="color: #f8f8f2">(window.</span><span style="color: #a6e22e">location</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">href</span><span style="color: #f8f8f2">).</span><span style="color: #a6e22e">hostname</span> <span style="color: #f92672">+</span> <span style="color: #e6db74">&quot;/template/style.css&quot;</span><span style="color: #f8f8f2">).</span><span style="color: #a6e22e">then</span><span style="color: #f8f8f2">(</span><span style="color: #a6e22e">res</span> <span style="color: #f8f8f2">=&gt;</span> <span style="color: #a6e22e">res</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">text</span><span style="color: #f8f8f2">()).</span><span style="color: #a6e22e">then</span><span style="color: #f8f8f2">(</span><span style="color: #a6e22e">style</span> <span style="color: #f8f8f2">=&gt;</span> <span style="color: #f8f8f2">{</span>
+  <span style="color: #a6e22e">fetch</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;https://&quot;</span> <span style="color: #f92672">+</span> <span style="color: #f92672">new</span> <span style="color: #a6e22e">URL</span><span style="color: #f8f8f2">(window.</span><span style="color: #a6e22e">location</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">href</span><span style="color: #f8f8f2">).</span><span style="color: #a6e22e">hostname</span> <span style="color: #f92672">+</span> <span style="color: #e6db74">&quot;/layout/style.css&quot;</span><span style="color: #f8f8f2">).</span><span style="color: #a6e22e">then</span><span style="color: #f8f8f2">(</span><span style="color: #a6e22e">res</span> <span style="color: #f8f8f2">=&gt;</span> <span style="color: #a6e22e">res</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">text</span><span style="color: #f8f8f2">()).</span><span style="color: #a6e22e">then</span><span style="color: #f8f8f2">(</span><span style="color: #a6e22e">style</span> <span style="color: #f8f8f2">=&gt;</span> <span style="color: #f8f8f2">{</span>
     <span style="color: #66d9ef">const</span> <span style="color: #a6e22e">The_Infinitys_css</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">document.</span><span style="color: #a6e22e">createElement</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;style&quot;</span><span style="color: #f8f8f2">);</span>
     <span style="color: #a6e22e">The_Infinitys_css</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">innerHTML</span> <span style="color: #f92672">=</span> <span style="color: #a6e22e">style</span><span style="color: #f8f8f2">;</span>
     <span style="color: #f8f8f2">document.</span><span style="color: #a6e22e">body</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">append</span><span style="color: #f8f8f2">(</span><span style="color: #a6e22e">The_Infinitys_css</span><span style="color: #f8f8f2">);</span>
   <span style="color: #f8f8f2">}).</span><span style="color: #66d9ef">catch</span><span style="color: #f8f8f2">(</span><span style="color: #a6e22e">err</span> <span style="color: #f8f8f2">=&gt;</span> <span style="color: #a6e22e">alert</span><span style="color: #f8f8f2">(</span><span style="color: #a6e22e">err</span><span style="color: #f8f8f2">));</span>
-  <span style="color: #a6e22e">fetch</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;https://&quot;</span> <span style="color: #f92672">+</span> <span style="color: #f92672">new</span> <span style="color: #a6e22e">URL</span><span style="color: #f8f8f2">(window.</span><span style="color: #a6e22e">location</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">href</span><span style="color: #f8f8f2">).</span><span style="color: #a6e22e">hostname</span> <span style="color: #f92672">+</span> <span style="color: #e6db74">&quot;/template/script.js&quot;</span><span style="color: #f8f8f2">).</span><span style="color: #a6e22e">then</span><span style="color: #f8f8f2">(</span><span style="color: #a6e22e">res</span> <span style="color: #f8f8f2">=&gt;</span> <span style="color: #a6e22e">res</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">text</span><span style="color: #f8f8f2">()).</span><span style="color: #a6e22e">then</span><span style="color: #f8f8f2">(</span><span style="color: #a6e22e">style</span> <span style="color: #f8f8f2">=&gt;</span> <span style="color: #f8f8f2">{</span>
+  <span style="color: #a6e22e">fetch</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;https://&quot;</span> <span style="color: #f92672">+</span> <span style="color: #f92672">new</span> <span style="color: #a6e22e">URL</span><span style="color: #f8f8f2">(window.</span><span style="color: #a6e22e">location</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">href</span><span style="color: #f8f8f2">).</span><span style="color: #a6e22e">hostname</span> <span style="color: #f92672">+</span> <span style="color: #e6db74">&quot;/layout/script.js&quot;</span><span style="color: #f8f8f2">).</span><span style="color: #a6e22e">then</span><span style="color: #f8f8f2">(</span><span style="color: #a6e22e">res</span> <span style="color: #f8f8f2">=&gt;</span> <span style="color: #a6e22e">res</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">text</span><span style="color: #f8f8f2">()).</span><span style="color: #a6e22e">then</span><span style="color: #f8f8f2">(</span><span style="color: #a6e22e">style</span> <span style="color: #f8f8f2">=&gt;</span> <span style="color: #f8f8f2">{</span>
     <span style="color: #66d9ef">const</span> <span style="color: #a6e22e">The_Infinitys_js</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">document.</span><span style="color: #a6e22e">createElement</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;script&quot;</span><span style="color: #f8f8f2">);</span>
     <span style="color: #a6e22e">The_Infinitys_js</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">innerHTML</span> <span style="color: #f92672">=</span> <span style="color: #a6e22e">style</span><span style="color: #f8f8f2">;</span>
     <span style="color: #f8f8f2">document.</span><span style="color: #a6e22e">body</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">append</span><span style="color: #f8f8f2">(</span><span style="color: #a6e22e">The_Infinitys_js</span><span style="color: #f8f8f2">);</span>
@@ -340,17 +340,17 @@
           </InfinitySpiritContent>
     </div>
     <div class="article-share" onclick="copyURL()">
-      <img src="../../InfinitySpirit/template/image/Infinity-clipboard.svg" alt="" />
+      <img src="../../InfinitySpirit/layout/image/Infinity-clipboard.svg" alt="" />
       Copy To ClipBoard
     </div>
     <div class="article-share" onclick="shareX()">
-      <img src="../../InfinitySpirit/template/image/X-Infinity.svg" alt="" />
+      <img src="../../InfinitySpirit/layout/image/X-Infinity.svg" alt="" />
       Share On X
     </div>
     <div class="article-index"></div>
     <div class="articles-recommended">
       <button>
-        <img src="../../InfinitySpirit/template/image/loading.svg" alt="" />
+        <img src="../../InfinitySpirit/layout/image/loading.svg" alt="" />
         <div>
           <h1>THE INFINITYS BELIEVE THE INFINITY</h1>
           <p>date:2024/07/07</p>

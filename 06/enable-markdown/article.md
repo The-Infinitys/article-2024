@@ -32,7 +32,7 @@ article_temp_head='''
     <title>HERE TO THE TITLE</title>
     <link rel="stylesheet" href="../../Infinity-style/style.css" />
     <script defer src="../../Infinity-style/script.js"></script>
-  <script defer src="/template/script.js"></script><link rel="stylesheet" href="/template/style.css" />
+  <script defer src="/layout/script.js"></script><link rel="stylesheet" href="/layout/style.css" />
     <script
     defer
     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2045274771035552"
