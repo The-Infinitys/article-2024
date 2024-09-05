@@ -9,6 +9,7 @@ scratch_comment_emulator = {
     <label for="position">position <input id="sce-position" type="text"></label>
     <label for="is-reply">reply <input id="sce-is-reply" type="checkbox" /></label>
     <label for="reply-pos">reply pos <input type="text" id="sce-reply-pos" /></label>
+    <label for="reply-id">Comment ID <input type="text" id="sce-reply-id" /></label>
     <button id="sce-send">send</button>
     `,
       css: `
@@ -113,6 +114,7 @@ background-color: #0056b3;
       comment_box.append(actions_warp);
       const comment_user_a = document.createElement("a");
       const comment_username = username;
+      const comment_id = document.querySelector("#sce-reply-id").value;
       comment_user_a.href = "/users/" + comment_username;
       const comment_image = document.createElement("img");
       comment_image.className = "avatar";
@@ -149,9 +151,9 @@ background-color: #0056b3;
       <a
         class="reply"
         style="display: inline;"
-        data-comment-id="1234567890"
-        data-parent-thread="1234567890"
-        data-commentee-id="1234567890"
+        data-comment-id="${comment_id}"
+        data-parent-thread="${comment_id}"
+        data-commentee-id="116605060"
         data-control="reply-to">
         <span>Reply</span>
       </a>
