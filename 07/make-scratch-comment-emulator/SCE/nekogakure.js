@@ -105,7 +105,6 @@ background-color: #0056b3;
     }
     if (window.location.href.startsWith("https://scratch.mit.edu/users/")) {
       var comment_box = document.createElement("div");
-      comment_box.id = Math.floor(Math.random() * 10 ** 10);
       comment_box.className = "comment";
       var actions_warp = document.createElement("div");
       actions_warp.className = "actions-wrap";
@@ -127,6 +126,7 @@ background-color: #0056b3;
           commentee_id = data.id.toString();
         })
         .catch((err) => alert("error: " + err));
+      comment_box.id = "comments-"+commentee_id;
       comment_image.width = 45;
       comment_image.height = 45;
       comment_user_a.append(comment_image);
