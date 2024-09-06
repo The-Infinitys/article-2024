@@ -71,11 +71,11 @@ def mdc(markdown_text,type="markdown"):
                 convert_mode["~~"] = not convert_mode["~~"]
             if markdown_line.startswith("# title: "):
                 markdown_title = markdown_line[9:]
+            elif markdown_line.startswith("# date: "):
+                markdown_date = markdown_line[8:]
             elif markdown_line.startswith("# ") and markdown_title == "":
                 markdown_title = markdown_line[2:]
                 markdown_result += markdown_line + "\n"
-            elif markdown_line.startswith("# date: "):
-                markdown_date = markdown_line[8:]
         if markdown_line.startswith("<h1>") and markdown_title == "":
             markdown_title = markdown_line.replace("<h1>", "").replace("</h1>", "")
             markdown_result += markdown_line + "\n"
@@ -87,13 +87,20 @@ def mdc(markdown_text,type="markdown"):
             )
         else:
             markdown_result += markdown_line + "\n"
-    return {
-        "html": markdown.markdown(
-            markdown_result, extensions=extensions, extension_configs=configs
-        ),
-        "title": markdown_title,
-        "date": markdown_date,
-    }
+    if type=="markdown":
+        return {
+            "html": markdown.markdown(
+                markdown_result, extensions=extensions, extension_configs=configs
+            ),
+            "title": markdown_title,
+            "date": markdown_date,
+        }
+    else:
+        return {
+            "html": markdown_result
+            "title": markdown_title,
+            "date": markdown_date,
+        }
 
 
 def indent_html(html, indent_level) -> str:
