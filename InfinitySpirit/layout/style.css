@@ -111,12 +111,13 @@ body {
 }
 
 .article-share {
-  width: min(80vw,50vh);
+  width: min(80vw, 50vh);
   height: 5vh;
   margin-left: 5vw;
   margin-top: 5vh;
   margin-bottom: 5vh;
-  font-size: min(8vw,5vh);
+  font-size: min(4vw, 2.5vh);
+  font-family: sans-serif;
   background: var(--back-color);
   padding: 10px;
   border: 2px solid var(--text-color);
