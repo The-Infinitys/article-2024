@@ -97,7 +97,7 @@ def mdc(markdown_text,type="markdown"):
         }
     else:
         return {
-            "html": markdown_result
+            "html": markdown_result,
             "title": markdown_title,
             "date": markdown_date,
         }
