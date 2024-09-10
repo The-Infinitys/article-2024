@@ -15,12 +15,6 @@
   }
 </style>
 
-## X
-
-<img src="./img/misocat_225-kokonyan.png" class="article-imgs" />
-<img src="./img/misocat-superchat.png" class="article-imgs" />
-<img src="./img/misocat-dislike.png" class="article-imgs" />
-
 ## Scratch
 
 <a href="https://scratch.mit.edu/projects/645241645/">
@@ -32,6 +26,12 @@
 <a href="https://scratch.mit.edu/projects/781522546/">
   <img src="./img/Kokonyan-kitty.png" class="article-imgs" />
 </a>
+
+## X
+
+<img src="./img/misocat_225-kokonyan.png" class="article-imgs" />
+<img src="./img/misocat-superchat.png" class="article-imgs" />
+<img src="./img/misocat-dislike.png" class="article-imgs" />
 
 うん！**いつ見ても素晴らしい**！()
 
