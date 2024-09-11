@@ -148,7 +148,7 @@ InfinitySpiritDate {
   font-family: sans-serif;
   overflow-x: hidden;
   overflow-y: scroll;
-  background-color: color-mix(in srgb, #888, transparent 80%);
+  background-color: color-mix(in srgb, var(--back-color), transparent 20%);
 }
 
 .article-index h1 {
