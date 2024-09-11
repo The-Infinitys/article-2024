@@ -1,6 +1,12 @@
 {
   "articles": [
     {
+      "id": "Kokonyan-225",
+      "title": "\u300e\u751f\u7269\u306e\u300f\u7d75\u3092\u66f8\u3044\u3066\u307f\u305f\uff01",
+      "date": "2024/09/11",
+      "thumbnail": "thumbnail.svg"
+    },
+    {
       "id": "renewal-layout",
       "title": "Web\u30b5\u30a4\u30c8\u306e\u30b9\u30bf\u30a4\u30eb\u304c\u30ea\u30cb\u30e5\u30fc\u30a2\u30eb\uff01",
       "date": "2024/09/06",
