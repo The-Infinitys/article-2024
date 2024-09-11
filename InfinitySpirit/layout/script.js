@@ -46,13 +46,16 @@ const makeIndex = () => {
     const element_pos = element.getBoundingClientRect();
     const element_x = element_pos.x;
     const element_y = element_pos.y;
-    tag.onclick = () => {
-      window.scrollTo({
-        behavior: "smooth",
-        top: element_y - window.innerHeight / 9,
-        left: element_x,
-      });
-    };
+    tag.addEventListener("click",() => {
+        element.scrollIntoView(
+          {
+            behavior: "smooth",
+            block: "center",
+            inline: "nearest"
+          }
+        );
+      }
+    );
     article_index.append(tag);
   };
   for (let index = 0; index < article_content.children.length; index++) {
