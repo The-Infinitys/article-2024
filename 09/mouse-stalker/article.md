@@ -7,6 +7,6 @@
 
 自分のサイトに「[マウスストーカー](https://google.com/search?q=マウスストーカー)」を実装しました！
 
-<img src="./thumbnail.jpeg" style="width:100%;height:auto;" />
+<img src="./thumbnail.jpg" style="width:100%;height:auto;" />
 
 # date: 2024/09/12
