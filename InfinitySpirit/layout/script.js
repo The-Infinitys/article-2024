@@ -40,20 +40,6 @@ create_gotop_button();
 const makeIndex = () => {
   const article_index = document.querySelector(".article-index");
   const article_content = document.querySelector("InfinitySpiritContent");
-  const addIndex = (element) => {
-    const tag = document.createElement(element.tagName);
-    tag.innerHTML = element.innerHTML;
-    tag.setAttribute("data-elem-id","#" + element.id)
-    tag.addEventListener("click", (e) => {
-      const elem = document.querySelector(e.getAttribute("data-elem-id"));
-      elem.scrollIntoView({
-        behavior: "smooth",
-        block: "center",
-        inline: "nearest",
-      });
-    });
-    article_index.append(tag);
-  };
   for (let index = 0; index < article_content.children.length; index++) {
     const element = article_content.children[index];
     const tagname = element.tagName.toLowerCase();
@@ -66,7 +52,18 @@ const makeIndex = () => {
         h4: "",
       }
     ) {
-      addIndex(element);
+      const tag = document.createElement(element.tagName);
+      tag.innerHTML = element.innerHTML;
+      tag.setAttribute("data-elem-id","#" + element.id)
+      tag.addEventListener("click", (e) => {
+        const elem = document.querySelector(e.getAttribute("data-elem-id"));
+        elem.scrollIntoView({
+          behavior: "smooth",
+          block: "center",
+          inline: "nearest",
+        });
+      });
+      article_index.append(tag);
     }
   }
   const scroll_index = () => {
