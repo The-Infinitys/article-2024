@@ -1,6 +1,12 @@
 {
   "articles": [
     {
+      "id": "ThunderBolt-Energy",
+      "title": "Music: Thunderbolt Energy",
+      "date": "2024/09/12",
+      "thumbnail": "thumbnail.jpeg"
+    },
+    {
       "id": "Kokonyan-225",
       "title": "\u300e\u751f\u7269\u306e\u300f\u7d75\u3092\u66f8\u3044\u3066\u307f\u305f\uff01",
       "date": "2024/09/11",
