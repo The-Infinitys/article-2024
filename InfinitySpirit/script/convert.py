@@ -76,6 +76,15 @@ def mdc(markdown_text,type="markdown"):
             elif markdown_line.startswith("# ") and markdown_title == "":
                 markdown_title = markdown_line[2:]
                 markdown_result += markdown_line + "\n"
+            elif markdown_line.startswith("<h1>") and markdown_title == "":
+                markdown_title = markdown_line.replace("<h1>", "").replace("</h1>", "")
+                markdown_result += markdown_line + "\n"
+            elif markdown_line.startswith("<date>"):
+                markdown_date = (
+                    markdown_line.replace("<date>", "")
+                    .replace("</date>", "")
+                    .replace(" ", "")
+                )
             else:
                 markdown_result += markdown_line + "\n"
         else:
