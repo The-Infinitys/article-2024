@@ -56,8 +56,7 @@ const makeIndex = () => {
       tag.innerHTML = element.innerHTML;
       tag.setAttribute("data-elem-id","#" + element.id)
       tag.addEventListener("click", (e) => {
-        const elem = document.querySelector(e.getAttribute("data-elem-id"));
-        elem.scrollIntoView({
+        element.scrollIntoView({
           behavior: "smooth",
           block: "center",
           inline: "nearest",
