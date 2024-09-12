@@ -43,19 +43,15 @@ const makeIndex = () => {
   const addIndex = (element) => {
     const tag = document.createElement(element.tagName);
     tag.innerHTML = element.innerHTML;
-    const element_pos = element.getBoundingClientRect();
-    const element_x = element_pos.x;
-    const element_y = element_pos.y;
-    tag.addEventListener("click",() => {
-        element.scrollIntoView(
-          {
-            behavior: "smooth",
-            block: "center",
-            inline: "nearest"
-          }
-        );
-      }
-    );
+    tag.setAttribute("data-elem-id","#" + element.id)
+    tag.addEventListener("click", (e) => {
+      const elem = document.querySelector(e.getAttribute("data-elem-id"));
+      elem.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+        inline: "nearest",
+      });
+    });
     article_index.append(tag);
   };
   for (let index = 0; index < article_content.children.length; index++) {
@@ -198,9 +194,7 @@ const copyURL = () => {
 };
 const shareX = () => {
   const target_url = window.location.href;
-  const target_text =
-    document.title +
-    " - The Infinity's";
+  const target_text = document.title + " - The Infinity's";
   const target_hashtags = "BelieveTheInfinityPossibility";
   const X_url =
     "https://x.com/intent/post?url=" +
