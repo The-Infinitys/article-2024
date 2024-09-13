@@ -52,15 +52,20 @@ const makeIndex = () => {
         h4: "",
       }
     ) {
-      const tag = document.createElement(element.tagName);
-      tag.innerHTML = element.innerHTML;
-      tag.setAttribute("data-elem-id","#" + element.id)
-      tag.addEventListener("click", (e) => {
-        element.scrollIntoView({
-          behavior: "smooth",
-          block: "center",
-          inline: "nearest",
-        });
+      const tag = document.createElement("a");
+      tag.innerHTML = element.outerHTML;
+      tag.href = "#" + element.id;
+      tag.addEventListener("click", () => {
+        setTimeout(() => {
+          const header_height = parseInt(
+            String(
+              getComputedStyle(
+                document.querySelector(":root")
+              ).getPropertyValue("--header-height")
+            ).trim()
+          );
+          window.scrollBy(0, -header_height);
+        }, 0);
       });
       article_index.append(tag);
     }

@@ -5,6 +5,7 @@
 
 body {
   background-color: var(--back-color);
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -169,6 +170,10 @@ InfinitySpiritDate {
 .article-index h4 {
   margin-left: 20px;
   font-weight: 400;
+}
+
+.article-index a {
+  color: var(--text-color);
 }
 
 .codehilite {
