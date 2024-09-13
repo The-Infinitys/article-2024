@@ -260,5 +260,6 @@
 ## 感想
 書いていて楽しかったのですが...
 **二度とやりたくない**です()
+<img src="./Kokonyan.svg" style="width:100%;height:auto;" />
 
 # date: 2024/09/11
