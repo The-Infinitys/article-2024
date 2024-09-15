@@ -22,7 +22,7 @@ def main() -> int:
         target_dates = datetime.datetime.now()
         target_dates = [[target_dates.year, target_dates.month]]
     elif setting["custom-date"] == "all":
-        target_dates=[]
+        target_dates = []
         for i in range(12):
             target_dates.append([setting["git-repository"]["year"], i + 1])
     else:
@@ -33,7 +33,8 @@ def main() -> int:
             setting["git-repository"]["year"],
             setting["converter"]["indent-level"],
         )
-    github.renew()
+    if setting["git-repository"]["test"] != True:
+        github.renew()
     return 0
 
 

@@ -2,7 +2,8 @@
   "custom-date": "all",
   "git-repository": {
     "name": "InfinitySpirit",
-    "year": 2024
+    "year": 2024,
+    "test":true
   },
   "converter": {
     "indent-level": 10
