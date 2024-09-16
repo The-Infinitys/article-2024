@@ -1,6 +1,12 @@
 {
   "articles": [
     {
+      "id": "DeathCat",
+      "title": "Music: DeathCat",
+      "date": "2024/09/16",
+      "thumbnail": "thumbnail.png"
+    },
+    {
       "id": "Infinix",
       "title": "Music: Infinix",
       "date": "2024/09/15",

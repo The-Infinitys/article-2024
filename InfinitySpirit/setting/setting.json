@@ -3,7 +3,7 @@
   "git-repository": {
     "name": "InfinitySpirit",
     "year": 2024,
-    "test":true
+    "test": false
   },
   "converter": {
     "indent-level": 10
