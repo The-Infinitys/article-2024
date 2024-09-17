@@ -1,6 +1,12 @@
 {
   "articles": [
     {
+      "id": "scratch-statistics",
+      "title": "Scratch\u306e\u50be\u5411\u306b\u3064\u3044\u3066",
+      "date": "2024/09/17",
+      "thumbnail": ""
+    },
+    {
       "id": "DeathCat",
       "title": "Music: DeathCat",
       "date": "2024/09/16",
