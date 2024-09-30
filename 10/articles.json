@@ -1,3 +1,10 @@
 {
-  "articles": []
+  "articles": [
+    {
+      "id": "create-new-font",
+      "title": "\u81ea\u4f5c\u30d5\u30a9\u30f3\u30c8\u4f5c\u3063\u3066\u307f\u305f\uff01",
+      "date": "2024/10/01",
+      "thumbnail": "thumbnail.svg"
+    }
+  ]
 }
