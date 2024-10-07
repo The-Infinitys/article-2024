@@ -1,6 +1,12 @@
 {
   "articles": [
     {
+      "id": "what-do-you-want",
+      "title": "\u30d1\u30d5\u30a9\u30fc\u30de\u30f3\u30b9\u304c\u843d\u3061\u3066\u304d\u305f",
+      "date": "2024/10/07",
+      "thumbnail": "thumbnail.jpeg"
+    },
+    {
       "id": "create-new-font",
       "title": "\u81ea\u4f5c\u30d5\u30a9\u30f3\u30c8\u4f5c\u3063\u3066\u307f\u305f\uff01",
       "date": "2024/10/01",
