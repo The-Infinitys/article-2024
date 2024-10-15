@@ -1,6 +1,12 @@
 {
   "articles": [
     {
+      "id": "Scratch-Scratch-why-have-you-purged-me",
+      "title": "Scratch\u3067\u306e\u6d3b\u52d5\u306b\u3064\u3044\u3066",
+      "date": "2024/10/15",
+      "thumbnail": "thumbnail.svg"
+    },
+    {
       "id": "what-do-you-want",
       "title": "\u30d1\u30d5\u30a9\u30fc\u30de\u30f3\u30b9\u304c\u843d\u3061\u3066\u304d\u305f",
       "date": "2024/10/07",
