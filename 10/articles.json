@@ -1,6 +1,12 @@
 {
   "articles": [
     {
+      "id": "Enough-is-Enough",
+      "title": "Music: \u3082\u3046\u3044\u3044\u3088",
+      "date": "2024/10/17",
+      "thumbnail": "thumbnail.jpeg"
+    },
+    {
       "id": "gingham-check",
       "title": "\u30ae\u30f3\u30ac\u30e0\u30c1\u30a7\u30c3\u30af",
       "date": "2024/10/16",
