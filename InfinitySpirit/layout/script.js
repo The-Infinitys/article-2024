@@ -214,13 +214,12 @@ const generate_audio_player = () => {
     return;
   }
   const audio_player = document.createElement("iframe");
-  const result_url = `/app/audio-player/?audio=${encodeURI(
-    audio_player.getAttribute("data-audio")
-  )}?img=${encodeURI(
-    audio_player.getAttribute("data-img")
-  )}?title=${encodeURI(
-    audio_player.getAttribute("data-title")
-  )}`;
+  const result_url = `/app/audio-player/index.html?audio=${encodeURI(
+    inf_audio_elem.getAttribute("data-audio")
+  )}&img=${encodeURI(
+    inf_audio_elem.getAttribute("data-img")
+  )}&title=${encodeURI(inf_audio_elem.getAttribute("data-title"))}`;
   audio_player.src = result_url;
+  inf_audio_elem.append(audio_player);
 };
 generate_audio_player();

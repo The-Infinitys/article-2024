@@ -326,3 +326,14 @@ InfinitySpiritDate {
     background-position-x: 200%;
   }
 }
+
+inf-audio{
+  display: block;
+  width:100%;
+  aspect-ratio: 1/1;
+}
+
+inf-audio>iframe{
+  width:100%;
+  aspect-ratio: 1/1;
+}
