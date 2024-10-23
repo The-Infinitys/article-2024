@@ -1,6 +1,12 @@
 {
   "articles": [
     {
+      "id": "deafer",
+      "title": "\u4f55\u3082\u805e\u304b\u305a\u306b\u97f3\u697d\u3092\u4f5c\u3063\u3066\u307f\u305f",
+      "date": "2024/10/23",
+      "thumbnail": "thumbnail.jpeg"
+    },
+    {
       "id": "enter",
       "title": "Music: Enter",
       "date": "2024/10/22",
