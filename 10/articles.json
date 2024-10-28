@@ -1,6 +1,12 @@
 {
   "articles": [
     {
+      "id": "question-from-scratch",
+      "title": "Scratch\u306e\u8cea\u554f",
+      "date": "2024/10/28",
+      "thumbnail": "thumbnail.jpeg"
+    },
+    {
       "id": "cosmic-warmth",
       "title": "Music: Cosmic Warmth",
       "date": "2024/10/25",
