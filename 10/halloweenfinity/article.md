@@ -16,7 +16,7 @@
 <inf-audio
   data-audio="/article-2024/10/halloweenfinity/halloweenfinity-2024.m4a"
   data-img="/article-2024/10/halloweenfinity/thumbnail.png"
-  data-title="Moment (The Infinity's)"></inf-audio>
+  data-title="Halloweenfinity(2024) - The Infinity's"></inf-audio>
 <a href="./halloweenfinity-2024.m4a"> Download Halloweenfinity(2024)</a>
 
 # date: 2024/10/28
