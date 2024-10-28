@@ -1,6 +1,12 @@
 {
   "articles": [
     {
+      "id": "halloweenfinity",
+      "title": "Music: Halloweenfinity(2024)",
+      "date": "2024/10/28",
+      "thumbnail": "thumbnail.png"
+    },
+    {
       "id": "question-from-scratch",
       "title": "Scratch\u306e\u8cea\u554f",
       "date": "2024/10/28",
