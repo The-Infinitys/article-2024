@@ -1,4 +1,8 @@
 const emulate_user = (username) => {
+  if (document.querySelector("#topnav") == null) {
+    alert("非対応です。\n対応するまでお待ちください...");
+    return;
+  }
   const get_cliped_name = (name) => {
     if (name.length <= 11) {
       return name;
@@ -25,14 +29,16 @@ const emulate_user = (username) => {
   ) {
     return;
   }
+  const unescapehtml = (str) =>
+    str
+      .replaceAll("&lt;", "<")
+      .replaceAll("&gt;", ">")
+      .replaceAll("<br>", "\n")
+      .replaceAll(/<[^>]*>/g, "\n");
   const bio_elem = document.querySelector("#bio-readonly");
   bio_elem.id = "bio";
   bio_elem.className = "editable read";
-  const bio_text = bio_elem.children[0].children[0].innerHTML
-    .replaceAll("&lt;", "<")
-    .replaceAll("&gt;", ">")
-    .replaceAll("<br>", "\n");
-  alert(bio_text);
+  const bio_text = unescapehtml(bio_elem.children[0].children[0].innerHTML);
   bio_elem.innerHTML = `<span data-content="prompt" style="display: none;">簡単に自己紹介してください。</span>
 <span class="small-text" style="display: none;">あと <span id="bio-chars-left">200</span> 文字。</span>
 <form>
@@ -41,11 +47,14 @@ const emulate_user = (username) => {
   const status_elem = document.querySelector("#status-readonly");
   status_elem.id = "status";
   status_elem.className = "editable read";
-  const status_text =
-    (status_elem.innerHTML = `<span data-content="prompt">あなたが取り組んでいることを説明してください。</span>
+  const status_text = unescapehtml(
+    status_elem.children[0].children[0].innerHTML
+  );
+  status_elem.innerHTML = `<span data-content="prompt">あなたが取り組んでいることを説明してください。</span>
 <span class="small-text">あと<span id="status-chars-left">200</span>文字。</span>
 <form>
-<textarea name="status">正体は... @The_Infinitysです！プロジェクト作ったついでに作りました！</textarea>
-</form>`);
+<textarea name="status">${status_text}</textarea>
+</form>`;
+  document.querySelector("#follow-button > div").remove();
 };
 emulate_user(prompt("username: "));
