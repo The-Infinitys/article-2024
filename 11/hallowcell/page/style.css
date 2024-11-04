@@ -4,6 +4,16 @@
   margin: 0;
 }
 
+:root {
+  --sns-icon-size: 200px;
+}
+
+@media (max-screen-width:500px) {
+  :root {
+    --sns-icon-size: 30vw;
+  }
+}
+
 body {
   background-image: url(./source/background.svg);
   background-color: rgba(0, 0, 0, 0.9);
@@ -16,7 +26,17 @@ body {
 
 section {
   padding-top: 96px;
-  width: 100%;
+  padding-left: 48px;
+  padding-right: 48px;
+  width: calc(100% - 48px * 2);
+}
+
+hr {
+  height: 1px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background: #ffffff;
 }
 
 section h1 {
@@ -39,7 +59,8 @@ section h2,
 section h3,
 section h4,
 section h5,
-section h6 {
+section h6,
+section p {
   line-height: 2.3;
 }
 
@@ -51,7 +72,26 @@ section.left {
   text-align: left;
 }
 
-section.news>div>img.sns-icon {
-  width: 35%;
-  height: 35%;
+section[name="news"]>div {
+  margin-top: 48px;
+  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  width: calc(var(--sns-icon-size) * 3);
+  height: var(--sns-icon-size);
+  display: flex;
+}
+
+section[name="news"]>div>img.sns-icon {
+  width: var(--sns-icon-size);
+  margin-left: calc(var(--sns-icon-size) * 0.25);
+  margin-right: calc(var(--sns-icon-size) * 0.25);
+  aspect-ratio: 1;
+}
+
+footer {
+  width: 100%;
+  height: 24px;
+  font-size: 24px;
+  text-align: right;
 }
