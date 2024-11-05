@@ -1,6 +1,12 @@
 {
   "articles": [
     {
+      "id": "micro-monster",
+      "title": "Scratch\u306e\u30a2\u30a4\u30b3\u30f3\u4f5c\u3063\u3066\u307f\u305f\uff01",
+      "date": "2024/11/05",
+      "thumbnail": "thumbnail.webp"
+    },
+    {
       "id": "hallo-cel",
       "title": "\u516c\u5f0fWeb\u30da\u30fc\u30b8\uff01\uff1f",
       "date": "2024/11/04",
