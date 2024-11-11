@@ -11,6 +11,7 @@
       <stop offset="1" stop-color="#ff0" />
     </linearGradient>
   </defs>
+  <rect x="0" y="0" width="325" height="100" style="fill:#2c0505;stroke:url(#rainbow);stroke-width:10;" />
   <path d="M50,20
   l20,-10
   h10
@@ -55,5 +56,4 @@
   h20
   l30,-60
   z" fill="url(#rainbow)" stroke="url(#rainbow)" stroke-width="1" />
-  <rect x="0" y="0" width="325" height="100" style="fill:#2c0505;stroke:url(#rainbow);stroke-width:10;" />
 </svg>
