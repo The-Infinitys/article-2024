@@ -1,6 +1,12 @@
 {
   "articles": [
     {
+      "id": "pocky-day",
+      "title": "\u30dd\u30c3\u30ad\u30fc\u306e\u65e5",
+      "date": "2024/11/11",
+      "thumbnail": "thumbnail.svg"
+    },
+    {
       "id": "micro-monster",
       "title": "Scratch\u306e\u30a2\u30a4\u30b3\u30f3\u4f5c\u3063\u3066\u307f\u305f\uff01",
       "date": "2024/11/05",
