@@ -1,6 +1,12 @@
 {
   "articles": [
     {
+      "id": "dancinginfinity",
+      "title": "Dancing Infinity!",
+      "date": "2024/11/14",
+      "thumbnail": "thumbnail.svg"
+    },
+    {
       "id": "new-sounds",
       "title": "Music: New Sounds",
       "date": "2024/11/14",
