@@ -1,6 +1,12 @@
 {
   "articles": [
     {
+      "id": "new-sounds",
+      "title": "Music: New Sounds",
+      "date": "2024/11/14",
+      "thumbnail": "thumbnail.png"
+    },
+    {
       "id": "pocky-day",
       "title": "\u30dd\u30c3\u30ad\u30fc\u306e\u65e5",
       "date": "2024/11/11",
