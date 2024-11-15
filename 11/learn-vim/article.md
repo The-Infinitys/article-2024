@@ -19,7 +19,7 @@ Vimは、vi から派生し、発展した高機能なテキストエディタ�
 
 で、コマンドラインでコマンドを実行し、vimを起動。
 
-'vim'
+`vim`
 
 そして実際に表示された感じがこんな感じです。
 
@@ -41,21 +41,21 @@ Vimは、vi から派生し、発展した高機能なテキストエディタ�
 
 例:
 
-'''
+```
 Teh Infinitys
 Teh Infinitys
 Teh Infinitys
 Teh Infinitys
-'''
+```
 
-ここで':%s/The/The/g'を実行すると...
+ここで`:%s/The/The/g`を実行すると...
 
-'''
+```
 The Infinity's
 The Infinity's
 The Infinity's
 The Infinity's
-'''
+```
 
 となります。
 
