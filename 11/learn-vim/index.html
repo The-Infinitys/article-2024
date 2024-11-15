@@ -73,7 +73,7 @@
           <p>先ず、Vimをインストールします。</p>
           <p><code>sudo apt install --fix-missing vim</code></p>
           <p>で、コマンドラインでコマンドを実行し、vimを起動。</p>
-          <p>&lsquo;vim&rsquo;</p>
+          <p><code>vim</code></p>
           <p>そして実際に表示された感じがこんな感じです。</p>
           <p><img src="./thumbnail.png" style="width:100%;height:auto;" /></p>
           <p>表示がすごくシンプル()<br />
@@ -87,19 +87,19 @@
           例えば<code>12G</code>と入力することで12行目に一瞬で移動したりすることができます。<br />
           他にも<code>:s/(検索語)/(置換語)/g</code>と入力することで特定の単語を別の単語に置き換えたりできます。</p>
           <p>例:</p>
-          <p>&rsquo;&lsquo;&rsquo;<br />
-          Teh Infinitys<br />
-          Teh Infinitys<br />
-          Teh Infinitys<br />
-          Teh Infinitys<br />
-          &lsquo;&rsquo;&lsquo;</p>
-          <p>ここで&rsquo;:%s/The/The/g&rsquo;を実行すると&hellip;</p>
-          <p>&rsquo;&lsquo;&rsquo;<br />
-          The Infinity&rsquo;s<br />
-          The Infinity&rsquo;s<br />
-          The Infinity&rsquo;s<br />
-          The Infinity&rsquo;s<br />
-          &lsquo;&rsquo;&lsquo;</p>
+<div class="codehilite" style="background: #272822"><pre style="line-height: 125%;"><span></span><code>Teh Infinitys
+Teh Infinitys
+Teh Infinitys
+Teh Infinitys
+          </code></pre></div>
+          
+          <p>ここで<code>:%s/The/The/g</code>を実行すると&hellip;</p>
+<div class="codehilite" style="background: #272822"><pre style="line-height: 125%;"><span></span><code>The Infinity&#39;s
+The Infinity&#39;s
+The Infinity&#39;s
+The Infinity&#39;s
+          </code></pre></div>
+          
           <p>となります。</p>
           <p>(実は最初に間違えてThe Infinity&rsquo;sのことをThe Infinitysと打っていてコマンドで修正したのは内緒)</p>
           <p>他にも種々多々のコマンドがあります。</p>
