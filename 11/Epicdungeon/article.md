@@ -10,7 +10,7 @@
 
 <inf-audio
   data-audio="/article-2024/11/Epicdungeon/epicdungeon.m4a"
-  data-img="/article-2024/11/epicdungeon/thumbnail.png"
+  data-img="/article-2024/11/Epicdungeon/thumbnail.png"
   data-title="Epic Dungeon (The Infinity's)">
 </inf-audio>
 
