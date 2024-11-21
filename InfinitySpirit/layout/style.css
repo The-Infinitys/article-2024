@@ -279,7 +279,10 @@ InfinitySpiritDate {
 .article-content p {
   line-height: 2.5;
 }
-
+.article-content details {
+  width: 100%;
+  height: auto;
+}
 @keyframes article-h-borders {
   0% {
     border-left: 15px solid #f00;
