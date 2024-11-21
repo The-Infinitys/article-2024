@@ -1,6 +1,12 @@
 {
   "articles": [
     {
+      "id": "infinity-tool",
+      "title": "Infinity Tool\u516c\u958b\uff01",
+      "date": "2024/11/21",
+      "thumbnail": "thumbnail.jpeg"
+    },
+    {
       "id": "Epicdungeon",
       "title": "Music: Epic Dungeon",
       "date": "2024/11/16",
