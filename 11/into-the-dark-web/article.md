@@ -57,13 +57,56 @@
 
 そしてインストールします。
 
-<img src="./img/install-tor.png" style="width:100%;height:auto;" />
+<img src="./img/install-tor.jpeg" style="width:100%;height:auto;" />
 
 参考までにInfinity Docker Desktopでインストールする際のコマンドをお見せします。
 
-### 4. Torブラウザを開く
+### 4. Torブラウザを使う
 
-<img src="./img/open-tor.jpog" style="width:100%;height:auto;" />
+<img src="./img/open-tor.jpeg" style="width:100%;height:auto;" />
 <img src="./img/loading-tor.png" style="width:100%;height:auto;" />
-<img src="./img/opend-tor.jpeg" style="width:100%;height:auto;" />
+<img src="./img/opened-tor.jpeg" style="width:100%;height:auto;" />
 
+こんな感じで起動することができます！
+
+実際にオニオンルーティングが機能しているか確認してみましょう！
+
+<img src="./img/ip-address.png" style="width:100%;height:auto;" />
+
+これを見れば分かると思いますが...IPアドレスが変わっています
+
+実際にダークウェブのサイトを覗いてみましょう！
+
+## ダークウェブの検索エンジン
+
+<img src="./img/search-infinity.png" style="width:100%;height:auto;" />
+
+これはDuckDuckGoですね
+
+<img src="./img/ahima.png" style="width:100%;height:auto;" />
+
+そしてこれはAhimaというものです。
+
+<details>
+
+#### ダークウェブのお約束()
+
+<summary>⚠閲覧注意⚠</summary>
+
+<img src="./img/drug-store_1.png" style="width:100%;height:auto;" />
+<img src="./img/drug-store_2.png" style="width:100%;height:auto;" />
+
+~~こういう風に(色んな意味で)ヤバイサイトも見れます~~
+
+</details>
+
+## 感想
+
+はい、滅茶苦茶楽しかったです()
+
+一応気をつけないと行けない点として、
+法律の遵守等があります。
+(まぁ見てるだけでしたら引っかかることは殆どないので安心してください)
+それとウイルス対策をしっかり()
+
+# date: 2024/11/22
