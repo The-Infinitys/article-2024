@@ -1,6 +1,12 @@
 {
   "articles": [
     {
+      "id": "Infinity-Wind",
+      "title": "Music: Infinity Wind",
+      "date": "2024/11/22",
+      "thumbnail": "thumbnail.png"
+    },
+    {
       "id": "into-the-dark-web",
       "title": "\u30c0\u30fc\u30af\u30a6\u30a7\u30d6\u306e\u4e2d\u306b\u5165\u3063\u3066\u307f\u305f\uff01",
       "date": "2024/11/22",
