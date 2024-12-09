@@ -34,7 +34,7 @@ jobs:
       - run: git pull
       - run: pip install pygments
       - run: pip install markdown
-      - run: git rm -rf InfinitySpirit/*
+      - run: git rm -rf InfinitySpirit
       - run: git clone https://github.com/The-Infinitys/InfinitySpirit.git
       - run: python InfinitySpirit
       - run: rsync -a ./ ./_site --exclude './_site'
